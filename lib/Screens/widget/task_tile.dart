@@ -5,14 +5,14 @@ class Listtile extends StatelessWidget {
 
   final String taskName;
 
-  final Function checkboxcallback;
-  final Function longpresscallback;
+  final Function(bool?) checkboxcallback;
+  final VoidCallback longpresscallback;
 
   Listtile(
-      {this.Ischecked,
-      this.taskName,
-      this.checkboxcallback,
-      this.longpresscallback});
+      {required this.Ischecked,
+      required this.taskName,
+      required this.checkboxcallback,
+      required this.longpresscallback});
 
   @override
   Widget build(BuildContext context) {

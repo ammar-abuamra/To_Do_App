@@ -2,14 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:to_do_app/Moudle/task_data.dart';
 
-class AddTaskScreen extends StatelessWidget {
+class AddTaskScreen extends StatefulWidget {
   final Function addTaskCallBack;
 
   @override
   AddTaskScreen(this.addTaskCallBack);
 
+  @override
+  State<AddTaskScreen> createState() => _AddTaskScreenState();
+}
+
+class _AddTaskScreenState extends State<AddTaskScreen> {
   Widget build(BuildContext context) {
-    String newTaskTail;
+    final newTaskTitle = TextEditingController();
     return Container(
       color: Colors.black54,
       child: Container(
@@ -32,16 +37,16 @@ class AddTaskScreen extends StatelessWidget {
                   fontSize: 30),
             ),
             TextField(
+              autocorrect: false,
+              keyboardType: TextInputType.visiblePassword,
               autofocus: true,
               textAlign: TextAlign.center,
-              onChanged: (newText) {
-                newTaskTail = newText;
-              },
+              controller: newTaskTitle,
             ),
             InkWell(
               onTap: () {
                 Provider.of<TaskData>(context, listen: false)
-                    .addTask(newTaskTail);
+                    .addTask(newTaskTitle.text);
                 Navigator.pop(context);
               },
               child: Container(
