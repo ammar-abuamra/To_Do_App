@@ -1,16 +1,13 @@
-# to_do_app
+## To_do_app
 
-to do app with provide state mangement
+To do app with provide state mangement
 
-## Getting Started
+MVC file Architecture Pattern
 
-This project is a starting point for a Flutter application.
+Clean Code !
 
-A few resources to get you started if this is your first Flutter project:
+Local Storge
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials, samples, guidance on
-mobile development, and a full API reference.
+
+![2 do app](https://user-images.githubusercontent.com/76402626/148616493-38722c0e-58af-413d-9a51-765bf8b2974b.png)
