@@ -2,8 +2,8 @@
     package="com.example.to_do_app">
 
     <application
-        android:icon="@mipmap/ic_launcher"
-        android:label="to_do_app">
+        android:icon="@mipmap/launcher_icon"
+        android:label="To Do App">
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
